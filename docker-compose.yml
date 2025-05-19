@@ -2,7 +2,7 @@ services:
   app:
     build: .
     ports:
-      - "3001:3000"
+      - "3001:3000"  # Host port : Container port
     depends_on:
       - mongo
     environment:
@@ -15,4 +15,3 @@ services:
 
 volumes:
   mongo-data:
-
